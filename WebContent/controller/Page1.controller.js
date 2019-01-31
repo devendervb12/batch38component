@@ -39,6 +39,11 @@ sap.ui.controller("smax.batch38.Product.controller.Page1", {
 		var oRouter = this.getOwnerComponent().getRouter();
 		
 		oRouter.navTo("secondPage");
+	},
+	
+	onItemPress : function(oEvent){
+		
+		this.getOwnerComponent().getRouter().navTo("secondPage", {pid : oEvent.getSource().getTitle()});
 	}
 
 });
