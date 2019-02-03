@@ -3,6 +3,13 @@
 		xmlns:html="http://www.w3.org/1999/xhtml">
 	<Page title="Page2">
 				<content>
+				<VBox>
+				
+				   <Text text="{ProductID}"/>
+				   <Text text="{Name}"/>
+				   <Text text="{Description}"/>
+				   <Text text="{Category}"/> 
+				  </VBox> 
 					<Button text="Go to Page1" press="gotoPage1" />
 				</content>
 			</Page>

@@ -16,26 +16,22 @@
   			},
 			"routing" : {
 				"config" : {
-					"routerClass" : "sap.m.routing.Router"					
+					"routerClass" : "sap.m.routing.Router",
+					"viewType" : "XML",
+					 "controlId" : "idApp",
+					 "controlAggregation" : "pages",
+					 "viewPath" : "smax.batch38.Product.view"					
 				},
 				"routes" : [
 					{
 					  "pattern" : "",	
 					  "name" : "home",
-					  "viewName" : "smax.batch38.Product.view.Page1",
-					  "viewType" : "XML",
-					  "controlId" : "idApp",
-					  "controlAggregation" : "pages"
-					  
+					  "viewName" : "Page1"					  
 					},
 					{
 					  "pattern" : "toPage2/{pid}",
 					  "name" : "secondPage",
-					  "viewName" : "smax.batch38.Product.view.Page2",
-					  "viewType" : "XML",
-					  "controlId" : "idApp",
-					  "controlAggregation" : "pages"
-					  
+					  "viewName" : "Page2"					  
 					}
 					]
 			}
